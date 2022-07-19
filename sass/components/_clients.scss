@@ -1,26 +1,20 @@
 @import "../utils/vars";
 .clients {
+    max-width: 480px;
     display: flex;
-    flex-wrap: wrap;
-
-    &__item:nth-child(n+2) {
-        margin-bottom: 30px;
-        &:nth-last-of-type(-n + 2) {
-            margin-bottom: 0;
-        }
-    }
-    &__item:nth-child(2n + 1) {
-        margin-right: 30px;
-    }
+    //flex-wrap: wrap;
+        max-width: 480px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     &__link {
-        width: 208px;
-        height: 92px;
+        max-width: 210px;
+        max-height: 92px;
         color: #AFB1B8;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
@@ -29,8 +23,8 @@
         }
     }
     &__icon {
-        width: 106px;
-        height: 60px;
+        max-width: 106px;
+        max-height: 60px;
         fill: currentColor;
     }
 }
