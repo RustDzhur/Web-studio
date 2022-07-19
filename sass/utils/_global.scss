@@ -1,7 +1,5 @@
-@use "../utils/vars";
-@use "../utils/mixin";
-@import "../utils/vars";
-@import "../utils/mixin";
+@import "./vars";
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.71;

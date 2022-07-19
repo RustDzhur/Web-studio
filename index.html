@@ -22,43 +22,56 @@
         <a class="logo logo-header" href="./index.html">
           <span class="logo__decor">Web</span>Studio
         </a>
-        <ul class="list-nav">
-          <li class="list-nav__item">
-            <a class="list-nav__link list-nav__link--active-page" href="./index.html">
-              Студия
-            </a>
-          </li>
-          <li class="list-nav__item">
-            <a class="list-nav__link" href="./portfolio.html">
-              Портфолио
-            </a>
-          </li>
-          <li class="list-nav__item">
-            <a class="list-nav__link" href="">
-              Контакты
-            </a>
-          </li>
-        </ul>
+        <button type="button" class="menu-btn" data-menu-button aria-expanded="false">
+          <svg width="40" height="40" aria-label="переключатель мобильного меню">
+            <use class="menu-btn__burger" href="./images/burger.svg#icon-burger"></use>
+            <use class="menu-btn__cross" href="./images/burger.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu>
+          <ul class="list-nav">
+            <li class="list-nav__item">
+              <a class="list-nav__link list-nav__link--active-page" href="./index.html">
+                Студия
+              </a>
+            </li>
+            <li class="list-nav__item">
+              <a class="list-nav__link" href="./portfolio.html">
+                Портфолио
+              </a>
+            </li>
+            <li class="list-nav__item">
+              <a class="list-nav__link" href="">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="list-contact">
+            <li class="list-contact__tel">
+              <a class="list-contact__link" href="tel:+380961111111">
+                <svg class="list-contact__icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="list-contact__email">
+              <a class="list-contact__link list-contact__link--email" href="mailto:info@devstudio.com">
+                <svg class="list-contact__icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="list-contact__social">
+              <a class="list-contact__link list-contact__link--social" href="https://www.instagram.com/">Instagram</a>
+              <a class="list-contact__link list-contact__link--social" href="https://twitter.com/?lang=ru">Twitter</a>
+              <a class="list-contact__link list-contact__link--social" href="https://www.facebook.com/">Facebook</a>
+              <a class="list-contact__link list-contact__link--social" href="https://www.linkedin.com/">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-
-      <ul class="list-contact">
-        <li class="list-contact__email">
-          <a class="list-contact__link" href="mailto:info@devstudio.com">
-            <svg class="list-contact__icon">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="list-contact__tel">
-          <a class="list-contact__link" href="tel:+380961111111">
-            <svg class="list-contact__icon">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
     </div>
   </header>
 
@@ -449,76 +462,77 @@
   </footer>
 
   <!--Модальное окно-->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal__btn" data-modal-close>
-          <svg class="modal__icon">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal__btn" data-modal-close>
+        <svg class="modal__icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
 
-        <!--ФОРМЫ ДЛЯ МОДАЛЬНОГО ОКНА-->
-        <form class="modal-form">
-          <p class="modal-form__title">
-            Оставьте свои данные, мы вам перезвоним
-          </p>
+      <!--ФОРМЫ ДЛЯ МОДАЛЬНОГО ОКНА-->
+      <form class="modal-form">
+        <p class="modal-form__title">
+          Оставьте свои данные, мы вам перезвоним
+        </p>
 
-          <div class="form-group">
-            <label class="form-group__field">
-              <span class="form-group__name">Имя</span>
-              <span class="form-group__icon-box">
-                <input class="form-group__input" type="text" name="user-name" autofocus />
-                <svg class="form-group__icon">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </span>
-            </label>
-
-            <label class="form-group__field">
-              <span class="form-group__name">Телефон</span>
-              <span class="form-group__icon-box">
-                <input class="form-group__input" type="text" name="user-tel" />
-                <svg class="form-group__icon">
-                  <use href="./images/icons.svg#icon-phone-form"></use>
-                </svg>
-              </span>
-            </label>
-
-            <label class="form-group__field">
-              <span class="form-group__name">Почта</span>
-              <span class="form-group__icon-box">
-                <input class="form-group__input" type="text" name="user-email" />
-                <svg class="form-group__icon">
-                  <use href="./images/icons.svg#icon-email-form"></use>
-                </svg>
-              </span>
-            </label>
-
-            <label class="form-group__field">
-              <span class="form-group__name">Комментарий</span>
-              <textarea class="form-group__textarea" name="feedback" cols="30" rows="10"
-                placeholder="Введите текст"></textarea>
-            </label>
-          </div>
-
-          <label class="agreement">
-            <input class="agreement__input" type="checkbox" name="user-agreement" />
-            <span class="agreement__span">
-              <svg class="agreement__icon">
-                <use href="./images/icons.svg#icon-icon-check1"></use>
+        <div class="form-group">
+          <label class="form-group__field">
+            <span class="form-group__name">Имя</span>
+            <span class="form-group__icon-box">
+              <input class="form-group__input" type="text" name="user-name" autofocus />
+              <svg class="form-group__icon">
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </span>
-            <span class="agreement__discr">Соглашаюсь с рассылкой и принимаю
-              <a class="agreement__terms" href="">Условия договора</a>
+          </label>
+
+          <label class="form-group__field">
+            <span class="form-group__name">Телефон</span>
+            <span class="form-group__icon-box">
+              <input class="form-group__input" type="text" name="user-tel" />
+              <svg class="form-group__icon">
+                <use href="./images/icons.svg#icon-phone-form"></use>
+              </svg>
             </span>
           </label>
-          <button class="agreement__btn" type="submit">
-            Отправить
-          </button>
-        </form>
-      </div>
+
+          <label class="form-group__field">
+            <span class="form-group__name">Почта</span>
+            <span class="form-group__icon-box">
+              <input class="form-group__input" type="text" name="user-email" />
+              <svg class="form-group__icon">
+                <use href="./images/icons.svg#icon-email-form"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-group__field">
+            <span class="form-group__name">Комментарий</span>
+            <textarea class="form-group__textarea" name="feedback" cols="30" rows="10"
+              placeholder="Введите текст"></textarea>
+          </label>
+        </div>
+
+        <label class="agreement">
+          <input class="agreement__input" type="checkbox" name="user-agreement" />
+          <span class="agreement__span">
+            <svg class="agreement__icon">
+              <use href="./images/icons.svg#icon-icon-check1"></use>
+            </svg>
+          </span>
+          <span class="agreement__discr">Соглашаюсь с рассылкой и принимаю
+            <a class="agreement__terms" href="">Условия договора</a>
+          </span>
+        </label>
+        <button class="agreement__btn" type="submit">
+          Отправить
+        </button>
+      </form>
     </div>
+  </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu-btn.js"></script>
 </body>
 
 </html>

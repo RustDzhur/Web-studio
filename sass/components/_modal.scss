@@ -1,7 +1,4 @@
-@use "../utils/vars";
-@use "../utils/mixin";
 @import "../utils/vars";
-@import "../utils/mixin";
 .backdrop {
     position: fixed;
     top: 0;
@@ -29,8 +26,8 @@
     margin: 0;
     padding: 0;
   
-    height: 581px;
-    width: 528px;
+    height: 609px;
+    width: 450px;
     background-color: #ffffff;
 
     background: #ffffff;
@@ -39,8 +36,10 @@
     &__btn {
         position: absolute;
         top: 8px;
-        left: 490px;
-        @include displayflex;
+        left: 412px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 30px;
         height: 30px;
         background: #ffffff;
@@ -62,7 +61,7 @@
 .modal-form {
     font-weight: map-get($font-weight, Bold);
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: $primaryColor;
     padding: 40px;
@@ -163,7 +162,9 @@
 }
 //---------------------------------------------
 .agreement {
-    @include displayflex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     &__input {
         position: absolute;
