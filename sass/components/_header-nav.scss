@@ -1,6 +1,8 @@
 @import "../utils/vars";
 .header {
     position: relative;
+    max-width: 480px;
+    margin: 0 auto;
 }
 .navigation {
     display: flex;
@@ -8,7 +10,7 @@
     justify-content: space-between;
 }
 .menu-btn {
-    z-index: 1;
+    z-index: 10;
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -44,6 +46,8 @@
 }
 .menu-container.is-open {
 display: block;
+width: 480px;
+
 }
 //---------------------------------------
 .list-nav {

@@ -2,7 +2,6 @@
 .filter {
     display: flex;
     flex-wrap: wrap;
-    width: 362px;
     margin-bottom: 40px;
     &__btn {
         font-weight: map-get($font-weight, Medium);
