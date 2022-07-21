@@ -23,11 +23,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    margin: 0;
+    margin-top: 93px;
     padding: 0;
   
-    max-height: 609px;
-    max-width: 450px;
+    height: 609px;
+    width: calc(100% - 30px);
     background-color: #ffffff;
 
     background: #ffffff;
@@ -36,7 +36,7 @@
     &__btn {
         position: absolute;
         top: 8px;
-        left: 412px;
+        left: calc(100% - 40px);
         display: flex;
         align-items: center;
         justify-content: center;
