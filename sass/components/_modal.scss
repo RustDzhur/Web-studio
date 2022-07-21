@@ -23,11 +23,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    margin-top: 93px;
+    margin: 0;
     padding: 0;
   
     height: 609px;
-    width: calc(100% - 30px);
+    width: 450px;
     background-color: #ffffff;
 
     background: #ffffff;
@@ -48,9 +48,13 @@
         cursor: pointer;
     }
     @media screen and (min-width: 768px) {
-        margin-top: 218px;
-        width: calc(100% - 450px);
-
+        margin: 0;
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        height: 581px;
+        width: 528px;
     }
     &__icon {
         width: 18px;

@@ -9,6 +9,9 @@
         margin-bottom: 40px;
         justify-content: center;
     }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
     &__btn {
         font-weight: map-get($font-weight, Medium);
         font-size: 16px;

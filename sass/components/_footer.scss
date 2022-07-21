@@ -2,11 +2,22 @@
 .footer {
     background-color: #2F303A;
     padding-top: 60px;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        &__content {
+            margin-right: 70px;
+        }
+    }
 }
 //----------------------------------------------
 .content-container {
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        text-align: unset;
+        align-items: baseline;
+        text-align: start;
+    }
 }
 @media screen and (min-width: 768px) {
     .tablet_container {
@@ -16,11 +27,27 @@
         text-align: center;
     }
 }
+@media screen and (min-width: 1200px) {
+    .tablet_container {
+        display: flex;
+        align-items: baseline;
+        justify-content: unset;
+        text-align: start;
+        flex-grow: 1;
+    }
+}
+
 //-------------------------------------------------------
 .address-list {
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: unset;
+    }
     &__item {
         margin-bottom: 8px;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
     }
     &__link {
         color: #ffffff;
@@ -47,6 +74,10 @@
 //-----------------------------------------------------------
 .socials {
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        margin-bottom: unset;
+    }
     &__text {
         font-weight: map-get($font-weight, Bold );
         font-size: 14px;
@@ -112,6 +143,14 @@
         margin-right: auto;
         margin-left: auto;
     }
+    @media screen and (min-width: 1200px) {
+        display: unset;
+        flex-direction: unset;
+        align-items: unset;
+        margin-right: unset;
+        margin-left: unset;
+        max-width: unset;
+    }
     &__text {
         font-weight: map-get($font-weight, Bold);
         font-size: 14px;
@@ -120,6 +159,10 @@
         text-transform: uppercase;
         color: #FFFFFF;
         margin-bottom: 20px;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+        }
     }
     &__input {
         margin-bottom: 60px;
@@ -140,6 +183,12 @@
         letter-spacing: 0.03em;
     
         color: rgba(255, 255, 255, 0.6);
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+            height: 50px;
+            margin-right: 12px;
+            margin-bottom: unset;
+        }
     }
     &__btn {
         display: inline-flex;
