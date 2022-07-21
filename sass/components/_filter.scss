@@ -3,6 +3,12 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
     &__btn {
         font-weight: map-get($font-weight, Medium);
         font-size: 16px;

@@ -1,8 +1,18 @@
 @import "../utils/vars";
 .advantages {
-    max-width: 480px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
     &__item {
         margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+        }
     }
     &__bg {
         background-color: #F5F4FA;
@@ -14,8 +24,6 @@
         justify-content: center;
     }
     &__icon {
-        width: 70px;
-        height: 70px;
         text-align: center;
     }
     &__title {
@@ -27,6 +35,9 @@
         text-align: center;
         color: $primaryColor;
         margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
     }
     &__text {
         letter-spacing: 0.03em;
