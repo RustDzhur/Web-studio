@@ -157,18 +157,27 @@
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="services">
           <li class="services__item">
-            <img srcset="./images/service-1@1x.jpg 1x, ./images/service-1@2x.jpg 2x" src="./images/service-1@1x.jpg"
-              alt="Пишем код" width="370" />
+            <picture>
+              <source srcset="./images/services-1@1x.jpg 370w, ./images/services-1@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px" type="image/jpeg">
+              <img src="./images/services-1@1x.jpg" alt="Пишем код" width="370" />
+            </picture>
             <p class="services__disr">Десктопные приложения</p>
           </li>
           <li class="services__item">
-            <img srcset="./images/service-2@1x.jpg, ./images/service-2@2x.jpg 2x" src="./images/service-2@1x.jpg"
-              alt="Делаем дизайн" width="370" />
+            <picture>
+              <source srcset="./images/services-2@1x.jpg 370w, ./images/services-2@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px" type="image/jpeg">
+              <img src="./images/services-2@1x.jpg" alt="Делаем дизайн" width="370" />
+            </picture>
             <p class="services__disr">Мобильные приложения</p>
           </li>
           <li class="services__item">
-            <img srcset="./images/service-3@1x.jpg 1x, ./images/service-3@2x.jpg 2x" src="./images/service-3@1x.jpg"
-              alt="Точный подбор цветовой гаммы" width="370" />
+            <picture>
+              <source srcset="./images/services-3@1x.jpg 370w, ./images/services-3@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px" type="image/jpeg">
+              <img src="./images/services-3@1x.jpg" alt="Точный подбор цветовой гаммы" width="370" />
+            </picture>
             <p class="services__disr">Дизайнерские решения</p>
           </li>
         </ul>
@@ -181,8 +190,15 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="team">
           <li class="team__item">
-            <img srcset="./images/team-1@1x.jpg 1x, ./images/team-1@2x.jpg 2x" class="team__image"
-              src="./images/team-1@1x.jpg" alt="Игорь Демьяненко" width="270" />
+            <picture>
+              <source srcset="./images/team-1mob@1x.jpg 450w, ./images/team-1mob@2x.jpg 900w"
+                sizes="(min-width: 480px) 450px" type="image/jpeg">
+              <source srcset="./images/team-1tab@1x.jpg 354w, ./images/team-1tab@2x.jpg 708w"
+                sizes="(min-width: 768px) 354px" type="image/jpeg">
+              <source srcset="./images/team-1desk@1x.jpg 270w, ./images/team-1desk@2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px" type="image/jpeg">
+              <img class="team__image" src="./images/team-1mob@1x.jpg" alt="Игорь Демьяненко" width="270" />
+            </picture>
             <div class="team__box">
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__text">Product Designer</p>
@@ -221,8 +237,15 @@
           </li>
 
           <li class="team__item">
-            <img srcset="./images/team-2@1x.jpg 1x, ./images/team-2@2x.jpg 2x" class="team__image"
-              src="./images/team-2@1x.jpg" alt="Ольга Репина" width="270" />
+            <picture>
+              <source srcset="./images/team-2mob@1x.jpg 450w, ./images/team-2mob@2x.jpg 900w"
+                sizes="(min-width: 480px) 450px" type="image/jpeg">
+              <source srcset="./images/team-2tab@1x.jpg 354w, ./images/team-2tab@2x.jpg 708w"
+                sizes="(min-width: 768px) 354px" type="image/jpeg">
+              <source srcset="./images/team-2desk@1x.jpg 270w, ./images/team-2desk@2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px" type="image/jpeg">
+              <img class="team__image" src="./images/team-2mob@1x.jpg" alt="Ольга Репина" width="270" />
+            </picture>
             <div class="team__box">
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__text">Frontend Developer</p>
@@ -261,8 +284,15 @@
           </li>
 
           <li class="team__item">
-            <img srcset="./images/team-3@1x.jpg 1x, ./images/team-3@2x.jpg 2x" class="team__image"
-              src="./images/team-3@1x.jpg" alt="Николай Тарасов" width="270" />
+            <picture>
+              <source srcset="./images/team-3mob@1x.jpg 450w, ./images/team-3mob@2x.jpg 900w"
+                sizes="(min-width: 480px) 450px" type="image/jpeg">
+              <source srcset="./images/team-3tab@1x.jpg 354w, ./images/team-3tab@2x.jpg 708w"
+                sizes="(min-width: 768px) 354px" type="image/jpeg">
+              <source srcset="./images/team-3desk@1x.jpg 270w, ./images/team-3desk@2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px" type="image/jpeg">
+              <img class="team__image" src="./images/team-3mob@1x.jpg" alt="Николай Тарасов" width="270" />
+            </picture>
             <div class="team__box">
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__text">Marketing</p>
@@ -301,8 +331,15 @@
           </li>
 
           <li class="team__item">
-            <img srcset="./images/team-4@1x.jpg 1x, ./images/team-4@2x.jpg 2x" class="team__image"
-              src="./images/team-4@1x.jpg" alt="Михаил Ермаков" width="270" />
+            <picture>
+              <source srcset="./images/team-4mob@1x.jpg 450w, ./images/team-4mob@2x.jpg 900w"
+                sizes="(min-width: 480px) 450px" type="image/jpeg">
+              <source srcset="./images/team-4tab@1x.jpg 354w, ./images/team-4tab@2x.jpg 708w"
+                sizes="(min-width: 768px) 354px" type="image/jpeg">
+              <source srcset="./images/team-4desk@1x.jpg 270w, ./images/team-4desk@2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px" type="image/jpeg">
+              <img class="team__image" src="./images/team-4mob@1x.jpg" alt="Михаил Ермаков" width="270" />
+            </picture>
             <div class="team__box">
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__text">UI Designer</p>

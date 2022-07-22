@@ -348,22 +348,14 @@ img {
 
 .header {
   position: relative;
-  max-width: 450px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 768px;
     position: sticky;
     border-bottom: 1px solid #ECECEC;
   }
 }
-@media screen and (min-width: 1200px) {
-  .header {
-    max-width: 1200px;
-  }
-}
-
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;

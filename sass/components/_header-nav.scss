@@ -1,15 +1,12 @@
 @import "../utils/vars";
 .header {
     position: relative;
-    max-width: 450px;
     margin: 0 auto;
     @media screen and (min-width: 768px) {
-        max-width: 768px;
         position: sticky;
         border-bottom: 1px solid #ECECEC;
     }
     @media screen and (min-width: 1200px) {
-        max-width: 1200px;
     }
 }
 .navigation {
