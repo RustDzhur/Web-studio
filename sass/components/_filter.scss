@@ -34,7 +34,6 @@
     }
     &__item {
         margin-right: 8px;
-        margin-bottom: 15px;
         @media screen and (max-width: 767px) {
             margin-bottom: 15px;
             &:nth-child(n + 4) {
@@ -50,5 +49,14 @@
             }
         }
     }
-
+    &__item:nth-child(3) {
+        @media screen and (min-width: 768px) {
+            margin-right: 8px;
+        }
+    }
+    &__item:nth-child(3) {
+        @media screen and (min-width: 1200px) {
+            margin-right: 8px;
+        }
+    }
 }
