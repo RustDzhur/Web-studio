@@ -2,6 +2,10 @@
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section__title {
@@ -12,4 +16,13 @@
     letter-spacing: 0.03em;
     color: $primaryColor;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-weight: map-get($font-weight, Bold);
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        color: #212121;
+    }
 }
