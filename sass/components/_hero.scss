@@ -4,13 +4,13 @@
     padding-bottom: 118px;
     text-align: center;
     
-    max-width: 480px;
+    max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
     background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
     background-color: $primaryColor;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .hero {
@@ -18,7 +18,6 @@
         }
     }
     @media screen and (min-width: 768px) {
-        max-width: 768px;
         margin-right: auto;
         margin-left: auto;
         background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
@@ -28,19 +27,17 @@
         background-position: center;
         @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             .hero {
-                max-width: 768px;
                 margin-right: auto;
                 margin-left: auto;
                 background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
                 background-color: $primaryColor;
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: cover;
                  background-position: center;
             }
         }
     }
     @media screen and (min-width: 1200px) {
-        max-width: 1600px;
         margin-right: auto;
         margin-left: auto;
         padding-top: 200px;
@@ -52,7 +49,6 @@
         background-position: center;
         @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             .hero {
-                max-width: 768px;
                 margin-right: auto;
                 margin-left: auto;
                 background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop@2x.jpg);

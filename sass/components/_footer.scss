@@ -8,6 +8,12 @@
             margin-right: 70px;
         }
     }
+    &__content {
+        margin-bottom: 60px;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: unset;
+        }
+    }
 }
 //----------------------------------------------
 .content-container {
@@ -36,13 +42,14 @@
         flex-grow: 1;
     }
 }
+@media screen and (max-width: 1199px) {
+    .tablet_container {
+        margin-bottom: 60px;
+    }
+}
 
 //-------------------------------------------------------
 .address-list {
-    margin-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-        margin-bottom: unset;
-    }
     &__item {
         margin-bottom: 8px;
         @media screen and (min-width: 1200px) {
@@ -73,7 +80,7 @@
 }
 //-----------------------------------------------------------
 .socials {
-    margin-bottom: 60px;
+    //margin-bottom: 60px;
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
         margin-bottom: unset;

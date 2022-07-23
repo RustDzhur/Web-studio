@@ -1,19 +1,22 @@
 @import "../utils/vars";
+
 .header {
     position: relative;
     margin: 0 auto;
+    border-bottom: 1px solid #ECECEC;
+
     @media screen and (min-width: 768px) {
-        position: sticky;
-        border-bottom: 1px solid #ECECEC;
+        position: static;
     }
-    @media screen and (min-width: 1200px) {
-    }
+
 }
+
 .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .menu-btn {
     z-index: 10;
     display: inline-flex;
@@ -23,10 +26,12 @@
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
+
     &:hover,
     &:focus {
         fill: $decorColor;
     }
+
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -35,12 +40,15 @@
 .menu-btn .menu-btn__cross {
     display: none;
 }
+
 .menu-btn.is-open .menu-btn__cross {
     display: block;
 }
+
 .menu-btn.is-open .menu-btn__burger {
     display: none;
 }
+
 //---------------------------------------------------
 .menu-container {
     position: absolute;
@@ -51,50 +59,64 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     width: 100%;
     display: none;
+
     @media screen and (min-width: 768px) {
         display: flex;
         box-shadow: none;
-        position: sticky;
+        position: static;
     }
+
     @media screen and (min-width: 1200px) {
         justify-content: space-between;
     }
 }
+
 .menu-container.is-open {
     display: block;
-    width: 480px;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
+
 //---------------------------------------
 .list-nav {
+    @media screen and (min-width: 480px) {
+        margin-bottom: 302px;
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
+        margin-bottom: 0;
+        margin-right: 84px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+    }
+
     &__item {
-        padding-left: 40px;
-        margin-bottom: 302px;
         &:not(:last-child) {
             margin-bottom: 32px;
+
             @media screen and (min-width: 768px) {
                 margin-bottom: 0;
                 margin-right: 50px;
             }
         }
+
         @media screen and (min-width: 768px) {
             position: relative;
-            margin-bottom: 0;
-            margin-right: 84px;
             padding-top: 32px;
             padding-bottom: 32px;
             padding-left: 0;
         }
-        @media screen and (min-width: 1200px) {
-            margin-right: 0;
-        }
     }
+
     &__link {
         font-weight: 500;
         font-size: 40px;
@@ -102,10 +124,12 @@
         letter-spacing: 0.02em;
         color: $primaryColor;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
         &:hover,
         &:focus {
             color: $decorColor;
-        }   
+        }
+
         @media screen and (min-width: 768px) {
             font-weight: 500;
             font-size: 14px;
@@ -113,36 +137,36 @@
             letter-spacing: 0.02em;
             color: $primaryColor;
         }
-    } 
+    }
 }
+
 .list-contact {
-    padding-left: 40px;
     @media screen and (min-width: 768px) {
         padding-left: 0;
     }
+
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
         justify-content: baseline;
     }
+
     &__tel {
         margin-bottom: 32px;
+
         @media screen and (min-width: 768px) {
             margin-bottom: 0;
         }
     }
+
     &__email {
         margin-bottom: 64px;
+
         @media screen and (min-width: 768px) {
             margin-bottom: 0;
         }
     }
-    &__social {
-        margin-bottom: 48px;
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
-    }
+
     &__link {
         font-weight: 500;
         font-size: 34px;
@@ -150,10 +174,12 @@
         letter-spacing: 0.02em;
         color: $decorColor;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
         &:hover,
         &:focus {
             color: $decorColor;
-        } 
+        }
+
         @media screen and (min-width: 768px) {
             font-weight: 500;
             font-size: 12px;
@@ -165,6 +191,7 @@
             padding-bottom: 5px;
             padding-top: 21px;
         }
+
         @media screen and (min-width: 1200px) {
             padding-top: 32px;
             padding-bottom: 32px;
@@ -175,12 +202,14 @@
             letter-spacing: 0.02em;
 
         }
+
         &--email {
             font-weight: 500;
             font-size: 24px;
             line-height: 28px;
             letter-spacing: 0.02em;
             color: $secondaryColor;
+
             @media screen and (min-width: 768px) {
                 font-weight: 500;
                 font-size: 12px;
@@ -190,6 +219,7 @@
                 padding-top: 5px;
                 padding-bottom: 21px;
             }
+
             @media screen and (min-width: 1200px) {
                 padding-top: 32px;
                 padding-bottom: 32px;
@@ -200,21 +230,11 @@
                 letter-spacing: 0.02em;
             }
         }
-        &--social {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 1.22;
-            letter-spacing: 0.02em;
-            color: $decorColor;
-            padding-right: 10px;
-            margin-right: 10px;
-            &:not(:last-child) {
-                border-right: 1px solid rgba(33, 33, 33, 0.2);
-            }
-        }
     }
+
     &__icon {
         display: none;
+
         @media screen and (min-width: 768px) {
             display: block;
             fill: currentColor;
@@ -222,10 +242,36 @@
         }
     }
 }
+
+.list-social {
+    @media screen and (min-width: 480px) {
+        display: flex;
+        &__item {
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            padding-right: 10px;
+            margin-right: 10px;
+            &:last-child {
+                border: none;
+            }
+        }
+        &__link {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            letter-spacing: 0.02em;
+            color: $decorColor;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
 //-----------------------------------------------
 .list-nav__link--active-page {
     color: $decorColor;
 }
+
 @media screen and (min-width: 768px) {
     .list-nav__link--active-page::after {
         content: "";
@@ -241,4 +287,5 @@
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+
 //--------------------------------------------------
