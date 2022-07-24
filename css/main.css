@@ -315,6 +315,7 @@ img {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
     color: #212121;
   }
 }
@@ -453,6 +454,7 @@ img {
 .menu-container.is-open {
   display: block;
   padding-left: 40px;
+  padding-right: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -1126,6 +1128,7 @@ img {
         -ms-flex-pack: unset;
             justify-content: unset;
     text-align: start;
+    margin-right: 93px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1166,7 +1169,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .socials {
-    margin-right: 93px;
     margin-bottom: unset;
   }
 }
@@ -1368,7 +1370,6 @@ img {
   margin: 0;
   padding: 0;
   height: 609px;
-  width: 450px;
   background-color: #ffffff;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1395,6 +1396,12 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    margin: 0;
+    min-width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
     margin: 0;
@@ -1404,7 +1411,6 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     margin: 0;
-    height: 581px;
     width: 528px;
   }
 }
@@ -1638,7 +1644,7 @@ img {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

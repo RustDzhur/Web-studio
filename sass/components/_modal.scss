@@ -27,7 +27,6 @@
     padding: 0;
   
     height: 609px;
-    width: 450px;
     background-color: #ffffff;
 
     background: #ffffff;
@@ -47,13 +46,17 @@
         border-radius: 50%;
         cursor: pointer;
     }
+
+    @media screen and (min-width: 480px) {
+        margin: 0;
+        min-width: 450px;
+    }
     @media screen and (min-width: 768px) {
         margin: 0;
         width: 450px;
     }
     @media screen and (min-width: 1200px) {
         margin: 0;
-        height: 581px;
         width: 528px;
     }
     &__icon {

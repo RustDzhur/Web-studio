@@ -38,6 +38,7 @@
         align-items: baseline;
         justify-content: unset;
         text-align: start;
+        margin-right: 93px;
         flex-grow: 1;
     }
 }
@@ -81,7 +82,6 @@
 .socials {
     //margin-bottom: 60px;
     @media screen and (min-width: 1200px) {
-        margin-right: 93px;
         margin-bottom: unset;
     }
     &__text {
